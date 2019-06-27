@@ -1,0 +1,24 @@
+{{#each forums}}
+    <div class="col-lg-8 col-md-6">
+        <div class="single-blog mt-30">
+            <div class="blog-content">
+                <div class="content">
+                    <h4 class="title"><a href="./forumDetail.html?id={{this.id}}">{{this.title}}</a></h4>
+                    <p>{{{ trimString this.description}}}</p>
+                </div>
+
+
+                <div class="meta d-flex justify-content-between align-items-center">
+                    <div class="meta-admin d-flex align-items-center">
+                        <div class="image">
+                            <img src="./assets/images/blog/avatar.jpg" alt="Admin">
+                        </div>
+                        <div class="admin-title">
+                            <h6 class="title">{{this.author}}</h6>
+                        </div>
+                    </div>  <!-- meta admin -->
+                </div> <!-- meta -->
+            </div>
+        </div> <!-- single blog -->
+    </div>
+{{/each}}

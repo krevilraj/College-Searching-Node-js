@@ -1,0 +1,32 @@
+{{#each datas }}
+
+    <tr>
+        <th scope="row">{{plusOne @index }}</th>
+        <td>{{ this.username }}</td>
+        <td>{{ this.email }}</td>
+        <td>
+            {{#if user_type}}
+                Admin
+            {{else}}
+                Student
+            {{/if}}
+        </td>
+        <td>
+            {{#if user_status}}
+                Banned
+            {{else}}
+                Active
+            {{/if}}
+        </td>
+        <td>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="user-edit.html?id={{ this._id }}"><i
+                    class="pe-7s-pen "> </i> Edit
+            </a>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-danger" data-id="{{this._id}}" href="javascript:void(0);"
+               onclick="return confirm('Are you sure to delete this record ?');"><i
+                    class="pe-7s-trash "> </i> Delete
+            </a>
+
+        </td>
+    </tr>
+{{/each}}

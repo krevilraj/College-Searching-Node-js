@@ -1,0 +1,21 @@
+<div class="col-lg-8">
+    <div class="section-title pb-30">
+        <h5 class="mb-15">Forum</h5>
+        <h3 class="title mb-15">{{ forum.title}}</h3>
+        {{{ forum.description}}}
+    </div> <!-- section title -->
+</div>
+<div class="col-lg-8">
+    <br><br>
+    <h4>Comments</h4>
+    <hr>
+    <section id="app" class="comments">
+        {{#each comments }}
+            <article>
+                <h4><a href="#">{{ this.author}}</a></h4>
+
+                {{{ this.description}}}
+            </article>
+        {{/each}}
+    </section>
+</div>

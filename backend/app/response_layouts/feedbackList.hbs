@@ -1,0 +1,21 @@
+{{#each datas }}
+
+    <tr>
+        <th scope="row">{{plusOne @index }}</th>
+        <td>{{ this.name }}</td>
+        <td>{{ this.email }}</td>
+        <td>{{ this.phone }}</td>
+
+        <td>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="feedback-edit.html?id={{ this._id }}"><i
+                    class="pe-7s-look"> </i> View
+            </a>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-danger" data-id="{{this._id}}" href="javascript:void(0);"
+               onclick="return confirm('Are you sure to delete this record ?');"><i
+                    class="pe-7s-trash "> </i> Delete
+            </a>
+
+        </td>
+    </tr>
+
+{{/each}}

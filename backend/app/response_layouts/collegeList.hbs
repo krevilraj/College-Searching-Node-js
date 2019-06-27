@@ -1,0 +1,18 @@
+{{#each datas }}
+    <tr>
+        <th scope="row">{{plusOne @index }}</th>
+        <td>{{ this.college_name }}</td>
+        <td>{{ this.location }}</td>
+        <td>{{ this.phone }}</td>
+        <td>{{ this.website }}</td>
+        <td>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="college-edit.html?id={{ this._id }}"><i
+                    class="pe-7s-pen"> </i> Edit
+            </a>
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-danger" data-id="{{this._id}}" href="javascript:void(0);"
+               onclick="return confirm('Are you sure to delete this record ?');"><i
+                    class="pe-7s-trash "> </i> Delete
+            </a>
+        </td>
+    </tr>
+{{/each}}
