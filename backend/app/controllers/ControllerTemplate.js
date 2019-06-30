@@ -1,6 +1,6 @@
 var exp = require('express');
 var appRouter = exp.Router();
-var FeedbackModel = require('../models/FeedbackModel');
+var FeedbackModel = require('../models/ContactModel');
 var jsonToken = require('jsonwebtoken');
 var bcrypt = require('bcrypt');
 var app = exp();

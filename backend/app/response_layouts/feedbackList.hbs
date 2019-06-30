@@ -2,12 +2,12 @@
 
     <tr>
         <th scope="row">{{plusOne @index }}</th>
-        <td>{{ this.name }}</td>
-        <td>{{ this.email }}</td>
-        <td>{{ this.phone }}</td>
+        <td class="td_name" data-name="{{this.name}}">{{ this.name }}</td>
+        <td class="td_email" data-email="{{this.email}}">{{ this.email }}</td>
+        <td class="td_phone" data-phone="{{this.phone}}">{{ this.phone }}</td>
 
         <td>
-            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="feedback-edit.html?id={{ this._id }}"><i
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary vari" data-toggle="modal" data-target="#exampleModalLong" data-id="{{ this._id }}"><i
                     class="pe-7s-look"> </i> View
             </a>
             <a class="mb-2 mr-2 btn-transition btn btn-outline-danger" data-id="{{this._id}}" href="javascript:void(0);"
@@ -16,6 +16,7 @@
             </a>
 
         </td>
+        <td class="td_message" style="display: none">{{this.message}}</td>
     </tr>
 
 {{/each}}

@@ -87,6 +87,45 @@ $(document).ready(function () {
         })
     });
 
+    $("#contact_form").submit(function (event) {
+        event.preventDefault();
+        var u_form = $(this);
+
+        var url = 'http://localhost:8080/sendContact';
+
+        var data = u_form.serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            dataType: "json",
+            beforeSend: function () {
+                $("#submit").html("Please Wait...");
+            },
+            success: function (response) {
+
+                if (response.response) {
+                    u_form[0].reset();
+                    document.getElementById("contact_message").innerHTML = "<div class=\"alert alert-success\" role=\"alert\">\n" +
+                        "Success!!! We will call you soon" +
+                        "</div>";
+                }
+                else {
+                    document.getElementById("contact_message").innerHTML = "<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                        response.message +
+                        "</div>";
+                }
+            },
+            complete: function () {
+                $("#submit").html("Enroll Now");
+            },
+            error: function () {
+            }
+        })
+    });
+
+
     if (localStorage.getItem("access_token") != "undefined" && localStorage.getItem("access_token") != "") {
         if (localStorage.getItem("admin_status") == "true") {
             $(".student").remove();

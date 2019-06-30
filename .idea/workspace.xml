@@ -1,7 +1,517 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94d03be4-5406-450d-97a6-3fcd7ddc3748" name="Default" comment="" />
+    <list default="true" id="94d03be4-5406-450d-97a6-3fcd7ddc3748" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerLogged.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/response_layouts/collegeComment.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/.github/ISSUE_TEMPLATE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/assets/ckeditor4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/ajax/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/icons/bidiltr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/icons/bidirtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/icons/hidpi/bidiltr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/icons/hidpi/bidirtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/bidi/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/dialogs/div.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/icons/creatediv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/icons/hidpi/creatediv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/div/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/dialogs/find.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/find-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/hidpi/find-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/hidpi/find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/hidpi/replace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/icons/replace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/find/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/font/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/plugins/xml/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/dialog_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/editor_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/dialog_sides.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/dialog_sides.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/dialog_sides_rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/mini.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/sprites_ie6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/images/toolbar_start.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/kama/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/skins/moono/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/collegeEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/collegeEnrollList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/feedbackList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/userAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/admin/userEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/student/contact_us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/student/img/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/ControllerFeedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/ControllerHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/ControllerStudent.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerStudent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/ControllerTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/controllers/ControllerTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/appointmentController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/feedbackController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/forumController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/frontendController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/loginController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controllers/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/CollegeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/CollegeModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/CommentModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/CommentModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/FeedbackModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/ContactModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/appointment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/feedback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/forum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/response_layouts/collegeEnrollList.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/response_layouts/collegeEnrollList.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/response_layouts/homeCollegePost.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/response_layouts/homeCollegePost.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/response_layouts/userList.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/response_layouts/userList.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/views/appointmentList.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/views/feedbackList.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/views/forumList.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/views/postDetail.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/views/postlist.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/assets/images/logo-inverse.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/assets/images/logo-inverse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/assets/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/collegeAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/collegeAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/collegeList.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/collegeList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/admin/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/admin/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/college-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/college-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/college_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/college_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/css/styles-merged.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/css/styles-merged.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/indexbkp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/student/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/student/teachers.html" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,59 +521,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="collegeList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/admin/collegeList.html">
+      <file leaf-file-name="college-single.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/student/college-single.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="632" column="28" selection-start-line="632" selection-start-column="28" selection-end-line="632" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="146" selection-start-line="146" selection-end-line="146" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collegeAdd.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/admin/collegeAdd.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="547" column="51" selection-start-line="547" selection-start-column="51" selection-end-line="547" selection-end-column="51" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collegeList.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerCollege.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="30" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollegeModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/models/CollegeModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -71,8 +541,8 @@
       <file leaf-file-name="college_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/student/college_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="274" selection-start-line="274" selection-end-line="274" />
+            <state relative-caret-position="85">
+              <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="6" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -85,27 +555,98 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/student/index.html">
+      <file leaf-file-name="ControllerHome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="409" column="21" selection-start-line="409" selection-start-column="21" selection-end-line="409" selection-end-column="21" />
+            <state relative-caret-position="-744">
+              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#518#827#0" />
+                <element signature="e#888#1216#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/student/js/custom.js">
+      <file leaf-file-name="ControllerCollege.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="49" column="7" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collegeAdd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/admin/collegeAdd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="265" column="25" selection-start-line="265" selection-start-column="25" selection-end-line="265" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collegeList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/admin/collegeList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userEdit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/admin/userEdit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collegeEdit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/admin/collegeEdit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="312" column="29" selection-start-line="312" selection-start-column="29" selection-end-line="312" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/student/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding>
-                <element signature="e#92#1985#0" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_us.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/student/contact_us.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -124,36 +665,35 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>response</find>
+      <find>image</find>
       <find />
-      <find>edit</find>
-      <find>grid</find>
-      <find>jwt</find>
-      <find>exphbs</find>
-      <find>config.secret</find>
-      <find>secret</find>
-      <find>config</find>
-      <find>router</find>
-      <find>bcrypt</find>
-      <find>Success</find>
-      <find>secretmessage</find>
-      <find>passwordConf</find>
-      <find>'false'</find>
-      <find>users</find>
-      <find>express</find>
-      <find>User</find>
-      <find>StudentModel</find>
-      <find>UserModel</find>
-      <find>appRoute</find>
-      <find>request</find>
-      <find>feedback</find>
-      <find>Feedback</find>
-      <find>myModal</find>
+      <find>btn_signin</find>
+      <find>fa-calendar</find>
+      <find>show-toastr-example</find>
+      <find>Long</find>
+      <find>exampleModalLong</find>
+      <find>radio</find>
+      <find>class=&quot;logo</find>
+      <find>administ</find>
+      <find>administration_staff</find>
+      <find>Location</find>
+      <find>href=&quot;admin/dashboard.html&quot;</find>
+      <find>college_id</find>
       <find>login</find>
-      <find>foruser</find>
-      <find>foradmin</find>
-      <find>admin</find>
-      <find>College</find>
-      <find>course</find>
+      <find>enrollForm</find>
+      <find>d=&quot;comment</find>
+      <find>collegeDetail</find>
+      <find>all_comment</find>
+      <find>col_id</find>
+      <find>alert</find>
+      <find>logo</find>
+      <find>logout</find>
+      <find>localStorage</find>
+      <find>UserModel</find>
+      <find>message</find>
+      <find>search</find>
+      <find>add</find>
     </findStrings>
     <replaceStrings>
       <replace>jsonToken</replace>
@@ -174,49 +714,68 @@
       <replace>CollegeEnroll</replace>
       <replace>student</replace>
       <replace>admin</replace>
+      <replace>submit</replace>
+      <replace>message</replace>
+      <replace>Setting</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/assets/css/styel.css" />
-        <option value="$PROJECT_DIR$/frontend/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/frontend/index.html" />
-        <option value="$PROJECT_DIR$/frontend/enlight/college-single.html" />
-        <option value="$PROJECT_DIR$/architectui-html-free/header_footer.html" />
-        <option value="$PROJECT_DIR$/architectui-html-free/table.html" />
-        <option value="$PROJECT_DIR$/architectui-html-free/form.html" />
-        <option value="$PROJECT_DIR$/backend/app/controllers/check.js" />
-        <option value="$PROJECT_DIR$/backend/README.md" />
-        <option value="$PROJECT_DIR$/backend/app/models/StudentModel.js" />
         <option value="$PROJECT_DIR$/backend/app/response_layout/userList.hbs" />
-        <option value="$PROJECT_DIR$/backend/app/response_layouts/userList.hbs" />
-        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerStudent.js" />
         <option value="$PROJECT_DIR$/backend/app/models/UserModel.js" />
         <option value="$PROJECT_DIR$/backend/app/models/FeedbackModel.js" />
         <option value="$PROJECT_DIR$/backend/app/controllers/ControllerFeedback.js" />
-        <option value="$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs" />
         <option value="$PROJECT_DIR$/backend/app/models/CollegeCourse.js" />
-        <option value="$PROJECT_DIR$/backend/app/models/CommentModel.js" />
         <option value="$PROJECT_DIR$/backend/app/controllers/ControllerCollegeEnroll.js" />
         <option value="$PROJECT_DIR$/backend/app/models/CollegeEnrollModel.js" />
         <option value="$PROJECT_DIR$/frontend/admin/user_list.html" />
-        <option value="$PROJECT_DIR$/backend/main.js" />
         <option value="$PROJECT_DIR$/frontend/enlight/css/custom.css" />
         <option value="$PROJECT_DIR$/backend/app/views/homeCollegePost.hbs" />
         <option value="$PROJECT_DIR$/frontend/enlight/js/custom.js" />
-        <option value="$PROJECT_DIR$/backend/app/response_layouts/homeCollegePost.hbs" />
         <option value="$PROJECT_DIR$/frontend/enlight/index.html" />
-        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerHome.js" />
         <option value="$PROJECT_DIR$/frontend/enlight/college_list.html" />
         <option value="$PROJECT_DIR$/frontend/enlight/gulpfile.js" />
         <option value="$PROJECT_DIR$/frontend/student/gulpfile.js" />
         <option value="$PROJECT_DIR$/frontend/admin/form.html" />
-        <option value="$PROJECT_DIR$/backend/app/models/CollegeModel.js" />
-        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js" />
+        <option value="$PROJECT_DIR$/backend/app/controllers/check.js" />
+        <option value="$PROJECT_DIR$/frontend/admin/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs" />
+        <option value="$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs" />
+        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerStudent.js" />
+        <option value="$PROJECT_DIR$/backend/app/response_layouts/userList.hbs" />
+        <option value="$PROJECT_DIR$/backend/app/response_layouts/collegeEnrollList.hbs" />
+        <option value="$PROJECT_DIR$/frontend/admin/main.css" />
+        <option value="$PROJECT_DIR$/backend/app/models/CollegeModel.js" />
+        <option value="$PROJECT_DIR$/backend/app/models/CommentModel.js" />
+        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerLogged.js" />
+        <option value="$PROJECT_DIR$/backend/app/response_layouts/collegeComment.hbs" />
+        <option value="$PROJECT_DIR$/backend/app/response_layouts/homeCollegePost.hbs" />
+        <option value="$PROJECT_DIR$/frontend/student/css/style.min.css" />
+        <option value="$PROJECT_DIR$/frontend/student/css/custom.css" />
+        <option value="$PROJECT_DIR$/frontend/student/css/styles-merged.css" />
+        <option value="$PROJECT_DIR$/frontend/admin/collegeEnrollList.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/feedbackList.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/index.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/userAdd.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/userEdit.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/userList.html" />
+        <option value="$PROJECT_DIR$/frontend/student/js/custom.js" />
+        <option value="$PROJECT_DIR$/backend/main.js" />
+        <option value="$PROJECT_DIR$/frontend/admin/assets/scripts/custom.js" />
+        <option value="$PROJECT_DIR$/frontend/student/college_list.html" />
+        <option value="$PROJECT_DIR$/frontend/student/index.html" />
+        <option value="$PROJECT_DIR$/frontend/student/contact.html" />
+        <option value="$PROJECT_DIR$/frontend/student/contact_us.html" />
+        <option value="$PROJECT_DIR$/frontend/student/college-single.html" />
+        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerHome.js" />
         <option value="$PROJECT_DIR$/frontend/admin/collegeList.html" />
+        <option value="$PROJECT_DIR$/frontend/admin/collegeEdit.html" />
         <option value="$PROJECT_DIR$/frontend/admin/collegeAdd.html" />
+        <option value="$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js" />
       </list>
     </option>
   </component>
@@ -232,6 +791,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/backend/package.json" />
+      <path value="$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/package.json" />
       <path value="$PROJECT_DIR$/frontend/student/package.json" />
     </packageJsonPaths>
   </component>
@@ -240,6 +800,7 @@
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -274,20 +835,6 @@
             <path>
               <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
               <item name="assign2" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assign2" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="response_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assign2" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,7 +847,29 @@
               <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
               <item name="assign2" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assign2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assign2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assign2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assign2" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,13 +888,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\admin" />
-      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\admin\assets\scripts" />
+      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\student\js" />
+      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\student" />
+      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\student\img" />
       <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\backend\app\response_layouts" />
-      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\backend\app\controllers" />
-      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\backend\app\models" />
+      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\admin\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend\admin\assets\scripts" />
       <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\backend\app\response_layouts" />
       <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\backend\app\response_layout" />
       <recent name="D:\Important_project\software\xampp\htdocs\nodejs\assign2\frontend" />
@@ -364,12 +934,19 @@
       <workItem from="1561564626508" duration="7023000" />
       <workItem from="1561597944589" duration="1184000" />
       <workItem from="1561611351292" duration="5943000" />
-      <workItem from="1561626713182" duration="328000" />
+      <workItem from="1561626713182" duration="15663000" />
+      <workItem from="1561655378171" duration="9630000" />
+      <workItem from="1561703847943" duration="13690000" />
+      <workItem from="1561741789258" duration="762000" />
+      <workItem from="1561788330184" duration="5432000" />
+      <workItem from="1561809114203" duration="5974000" />
+      <workItem from="1561825039649" duration="5075000" />
+      <workItem from="1561855252160" duration="3479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69866000" />
+    <option name="totallyTimeSpent" value="129243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -381,7 +958,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
@@ -393,7 +970,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.36220473" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,130 +979,48 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/assets/css/app.css" />
-    <entry file="file://$PROJECT_DIR$/frontend/index.html" />
-    <entry file="file://$PROJECT_DIR$/frontend/student/indexbkp.html">
+    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/college-single.html">
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/check.js" />
+    <entry file="file://D:/Temp/architectui-html-free/components-modals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5032">
-          <caret line="306" column="50" selection-start-line="306" selection-start-column="50" selection-end-line="306" selection-end-column="50" />
+        <state relative-caret-position="14246">
+          <caret line="838" selection-start-line="838" selection-end-line="874" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/architectui-html-free/tables-regular.html" />
-    <entry file="file://$PROJECT_DIR$/architectui-html-free/header_footer.html" />
-    <entry file="file://$PROJECT_DIR$/architectui-html-free/elements-buttons-standard.html" />
-    <entry file="file://$PROJECT_DIR$/frontend/admin/table.html">
+    <entry file="file://$PROJECT_DIR$/backend/app/models/ContactModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="622" column="26" selection-start-line="622" selection-start-column="26" selection-end-line="622" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/architectui-html-free/forms-layouts.html" />
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/check.js">
+    <entry file="file://$PROJECT_DIR$/backend/app/models/UserModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config.js" />
-    <entry file="file://$PROJECT_DIR$/backend/app/models/appointment.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/appointmentController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="61" column="15" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/loginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerTemplate.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerStudent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/feedback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/FeedbackModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/user.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/forumComment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerFeedback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1339">
-          <caret line="80" column="69" lean-forward="true" selection-start-line="80" selection-start-column="69" selection-end-line="80" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="330">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/userList.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/CollegeCourseModel.js" />
-    <entry file="file://$PROJECT_DIR$/backend/app/models/CommentModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollegeEnroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="510">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -536,95 +1031,244 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollegeEnroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/feedbackList.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="8" selection-start-column="8" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/collegeEnrollList.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="170">
+          <caret line="10" column="128" selection-start-line="10" selection-start-column="128" selection-end-line="10" selection-end-column="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin/user_list.html">
+    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/images/logo-inverse.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="24025" column="17" selection-start-line="24025" selection-start-column="17" selection-end-line="24025" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/models/CommentModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerLogged.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
-          <caret line="578" column="35" selection-start-line="578" selection-start-column="35" selection-end-line="578" selection-end-column="35" />
+          <caret line="75" column="60" lean-forward="true" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/js/main.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/js/scripts.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/UserModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/frontendController.js">
+    <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/collegeComment.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/homeCollegePost.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="6" column="8249" selection-start-line="6" selection-start-column="8249" selection-end-line="6" selection-end-column="8249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/css/styles-merged.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="7645" column="19" selection-start-line="7645" selection-start-column="19" selection-end-line="7645" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/js/vendor/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+        <state relative-caret-position="184">
+          <caret line="16933" column="29" selection-start-line="16933" selection-start-column="29" selection-end-line="16933" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/admin/form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/collegeEnrollList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="688" lean-forward="true" selection-start-line="688" selection-end-line="688" />
+        <state relative-caret-position="448">
+          <caret line="323" column="48" selection-start-line="323" selection-start-column="48" selection-end-line="323" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/feedbackList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="289" column="48" selection-start-line="289" selection-start-column="48" selection-end-line="289" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/userAdd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="323" column="48" selection-start-line="323" selection-start-column="48" selection-end-line="323" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/userList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="249" column="23" lean-forward="true" selection-start-line="249" selection-start-column="23" selection-end-line="249" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/models/feedback.js" />
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/appointmentController.js" />
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerContact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+          <caret line="114" column="60" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/teachers.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/student/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/models/CollegeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/student/contact_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/student/college_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="274" selection-start-line="274" selection-end-line="274" />
+        <state relative-caret-position="85">
+          <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="6" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -636,72 +1280,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js">
+    <entry file="file://$PROJECT_DIR$/frontend/student/college-single.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="30" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/response_layouts/collegeList.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/models/CollegeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="409" column="21" selection-start-line="409" selection-start-column="21" selection-end-line="409" selection-end-column="21" />
+        <state relative-caret-position="459">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/student/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/lang/af.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/assets/scripts/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="49" column="7" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="49" selection-end-column="7" />
+        <state>
           <folding>
-            <element signature="e#92#1985#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/admin/collegeList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="632" column="28" selection-start-line="632" selection-start-column="28" selection-end-line="632" selection-end-column="28" />
+        <state relative-caret-position="252">
+          <caret line="181" column="30" lean-forward="true" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/userEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-744">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#518#827#0" />
+            <element signature="e#888#1216#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin/collegeEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="312" column="29" selection-start-line="312" selection-start-column="29" selection-end-line="312" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/admin/collegeAdd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="547" column="51" selection-start-line="547" selection-start-column="51" selection-end-line="547" selection-end-column="51" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="265" column="25" selection-start-line="265" selection-start-column="25" selection-end-line="265" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/controllers/ControllerCollege.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>

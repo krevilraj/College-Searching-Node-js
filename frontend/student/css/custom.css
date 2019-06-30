@@ -125,3 +125,6 @@
 #message .alert, #message2 .alert {
     padding: 0 15px !important;
 }
+.comment-date{
+    font-style: italic;
+}

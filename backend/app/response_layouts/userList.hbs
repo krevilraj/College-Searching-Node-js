@@ -5,7 +5,7 @@
         <td>{{ this.username }}</td>
         <td>{{ this.email }}</td>
         <td>
-            {{#if user_type}}
+            {{#if admin_status}}
                 Admin
             {{else}}
                 Student
@@ -13,13 +13,13 @@
         </td>
         <td>
             {{#if user_status}}
-                Banned
-            {{else}}
                 Active
+            {{else}}
+                Banned
             {{/if}}
         </td>
         <td>
-            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="user-edit.html?id={{ this._id }}"><i
+            <a class="mb-2 mr-2 btn-transition btn btn-outline-primary" href="userEdit.html?id={{ this._id }}"><i
                     class="pe-7s-pen "> </i> Edit
             </a>
             <a class="mb-2 mr-2 btn-transition btn btn-outline-danger" data-id="{{this._id}}" href="javascript:void(0);"

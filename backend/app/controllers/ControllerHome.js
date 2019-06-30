@@ -1,9 +1,10 @@
 var exp = require('express');
 var appRouter = exp.Router();
 var UserModel = require('../models/UserModel');
-var FeedbackModel = require('../models/FeedbackModel');
+var FeedbackModel = require('../models/ContactModel');
 var CollegeEnrollModel = require('../models/CollegeEnrollModel');
 var CollegeModel = require('../models/CollegeModel');
+var CommentModel = require('../models/CommentModel');
 var jsonToken = require('jsonwebtoken');
 var bcrypt = require('bcrypt');
 var dateFormat = require('dateformat');
@@ -14,7 +15,7 @@ appRouter.get('/homeCollege', function (req, res) {
         if (!err) {
             res.render("homeCollegePost", {
                 datas: docs,
-                layout:""
+                layout: ""
             });
         }
         else {
@@ -23,12 +24,51 @@ appRouter.get('/homeCollege', function (req, res) {
     }).limit(8).sort({'_id': -1});
 });
 
+appRouter.get('/commentCollege/:id', function (req, res) {
+    CommentModel.find({college_id: req.params.id}, (err, data) => {
+        if (!err) {
+            res.render("collegeComment", {
+                datas: data,
+                layout: ""
+            });
+        }
+        else {
+            console.log('Error in retrieving page :' + err);
+        }
+    }).sort({'_id': -1});
+});
+
+appRouter.get('/collegeDetail/:id', (req, res) => {
+    CollegeModel.findById(req.params.id, (err, data) => {
+        if (!err) {
+            res.json(data);
+        }
+    });
+});
+
+appRouter.post('/college_search', (req, res) => {
+    var s = req.body.query;
+    var query = { college_name: new RegExp(s, 'i') };
+    console.log(query);
+    CollegeModel.find(query, (err, data) => {
+        if (!err) {
+            res.render("homeCollegePost", {
+                datas: data,
+                layout: ""
+            });
+        }
+        else {
+            console.log('Error in retrieving page :' + err);
+        }
+    });
+});
+
 appRouter.get('/college_list', function (req, res) {
     CollegeModel.find((err, docs) => {
         if (!err) {
             res.render("homeCollegePost", {
                 datas: docs,
-                layout:""
+                layout: ""
             });
         }
         else {
@@ -57,7 +97,7 @@ appRouter.post('/studentProfile', (req, res) => {
 });
 
 //posting API
-appRouter.post('/addFeedback', (req, res) => {
+appRouter.post('/sendContact', (req, res) => {
     var newFeedback = new FeedbackModel({
         name: req.body.name,
         phone: req.body.phone,
@@ -82,7 +122,7 @@ appRouter.post('/addCollegeEnroll', (req, res) => {
         email: req.body.email,
         phone: req.body.phone,
         message: req.body.message,
-        college_id: req.body._id,
+        college_id: req.body.college_id,
         date: dateFormat(new Date(), "d mmm, yyyy h:MM tt")
     });
 
@@ -91,6 +131,27 @@ appRouter.post('/addCollegeEnroll', (req, res) => {
             console.log('Failed to Add' + err);
         } else {
             res.json({'response': 'Success!!! Added to CollegeEnroll'});
+        }
+    });
+});
+
+//posting API
+appRouter.post('/addCollegeComment', (req, res) => {
+    var datetime = new Date();
+    var newCollegeComment = new CommentModel({
+        username: req.body.username,
+        email: req.body.email,
+        phone: req.body.phone,
+        message: req.body.message,
+        college_id: req.body.college_id,
+        date: dateFormat(new Date(), "d mmm, yyyy h:MM tt")
+    });
+
+    newCollegeComment.save(function (err, data) {
+        if (err) {
+            console.log('Failed to Add' + err);
+        } else {
+            res.json({'response': 'Success!!! Comment Posted'});
         }
     });
 });
@@ -177,91 +238,5 @@ appRouter.post('/register', function (req, res, next) {
     }
 });
 
-appRouter.use(function (req, res, next) {
-
-    // check header or url parameters or post parameters for token
-    var token = req.body.token || req.param('token') || req.headers['x-access-token'];
-
-    // decode token
-    if (token) {
-
-        // verifies secret and checks exp
-        jsonToken.verify(token, "cmessage", function (err, decoded) {
-            if (err) {
-                return res.json({success: false, message: 'Failed to authenticate token.'});
-            } else {
-                // if everything is good, save to request for use in other routes
-                req.decoded = decoded;
-                next();
-            }
-        });
-
-    } else {
-
-        // if there is no token
-        // return an error
-        return res.status(403).send({
-            success: false,
-            message: 'No token provided.'
-        });
-
-    }
-
-});
-
-appRouter.post('/profile_edit', (req, res) => {
-    var all_data = req.body;
-    all_data.password = bcrypt.hashSync(all_data.password, 10);
-    all_data.repassword = all_data.password;
-    UserModel.findOneAndUpdate({_id: req.body._id}, all_data, {new: true}, (err, doc) => {
-        if (!err) {
-            res.json({'response': 'Profile Updated Successfully!!', 'username': doc.username});
-        }
-        else {
-            console.log('Error during record update : ' + err);
-        }
-    });
-});
-
-appRouter.post('/post_comment', (req, res) => {
-    UserModel.findOne({
-        _id: req.body._id
-    }, function (err, user) {
-        if (err) {
-            res.json({'response': 'Post Failed Something is wrong. Log in first!!1'});
-        } else if (!user) {
-            res.json({'response': 'Post Failed Something is wrong. Log in first!!2'});
-        } else if (user) {
-
-
-            if (user.username == req.body.username) {
-                var forumComment = new ForumComment();
-
-                forumComment.forum_id = req.body.forum_id;
-                forumComment.description = req.body.description;
-                forumComment.author = req.body.username;
-
-
-                forumComment.save((err, doc) => {
-                    if (err) {
-                        console.log('Error during record insertion : ' + err);
-                    } else {
-                        res.json({'response': 'Posted Successfully'});
-                    }
-                });
-            } else {
-                res.json({'response': 'You are not Authorized'});
-            }
-        }
-
-    });
-
-});
-
-appRouter.get('/users', function (req, res) {
-    UserModel.find({}, function (err, users) {
-        res.json(users);
-    });
-});
 
 module.exports = appRouter;

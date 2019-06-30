@@ -14,24 +14,24 @@ appRouter.use(function (req, res, next) {
     if (token) {
         jsonToken.verify(token, "cmessage", function (err, decoded) {
             if (err) {
-                return res.json({success: false, message: 'Failed to authenticate token.'});
+                return res.json({response: false, message: 'Failed to authenticate token.'});
             }
         });
     } else {
         return res.status(403).send({
-            success: false,
+            response: false,
             message: 'No token provided.'
         });
     }
     // Check Authorize User
     UserModel.findOne({_id: req.body.id}, function (err, user) {
-        if (err) {res.json({"response": 'Something is wrong'});}
-        else if (!user) {res.json({"response": 'You are not Allowed'});}
+        if (err) {res.json({"response": false,"message": 'Something is wrong'});}
+        else if (!user) {res.json({"response": false,"message": 'You are not Allowed'});}
         else if (user) {
             if (user.admin_status) {
                 next();
             } else {
-                res.json({"response": 'You are not Authorize'});
+                res.json({"response": false,"message": 'You are not Authorize'});
             }
         }
     });
@@ -45,18 +45,19 @@ appRouter.post('/addCollege', (req, res) => {
         location: req.body.location,
         website: req.body.website,
         phone: req.body.phone,
-        image: req.body.image,
-        description: req.body.description
+        course: req.body.course,
+        description: req.body.content
     });
 
     newCollege.save(function (err, data) {
         if (err) {
-            console.log('Failed to Add' + err);
+            res.json({"response": false,'message': err});
         } else {
-            res.json({'response': 'Success!!! Added to College'});
+            res.json({"response": true,'message': 'Success!!! Added to College'});
         }
     });
 });
+
 
 //listing API
 appRouter.post('/listCollege', function (req, res, next) {
@@ -68,7 +69,7 @@ appRouter.post('/listCollege', function (req, res, next) {
             });
         }
         else {
-            res.json({'response': 'Request Failed'});
+            res.json({"response": false,'message': 'Request Failed'});
         }
     }).sort({'_id': -1});
 });
@@ -77,10 +78,10 @@ appRouter.post('/listCollege', function (req, res, next) {
 appRouter.post('/deleteCollege', (req, res) => {
     CollegeModel.findByIdAndRemove(req.body._id, (err, doc) => {
         if (!err) {
-            res.json({'response': 'College Deleted Successfully!!'});
+            res.json({"response": true,'message': 'College Deleted Successfully!!'});
         }
         else {
-            res.json({'response': 'Error in delete :' + err});
+            res.json({"response": false,'message': 'Error in delete :' + err});
         }
     });
 });
@@ -96,16 +97,17 @@ appRouter.post('/editCollege', (req, res) => {
 
 //Update API
 appRouter.post('/updateCollege', (req, res) => {
-    CollegeModel.findOneAndUpdate({_id: req.body._id}, req.body, {new: true}, (err, doc) => {
+    var request_data = req.body;
+    request_data.description = req.body.content;
+    CollegeModel.findOneAndUpdate({_id: req.body._id}, request_data, {new: true}, (err, doc) => {
         if (!err) {
-            res.json({'response': 'Success!!! College is updated'});
+            res.json({"response": true,'message': 'Success!!! College is updated'});
         }
         else {
-            res.json({'response': 'Error in Update : ' + err});
+            res.json({"response": false,'message': 'Error in Update : ' + err});
         }
     });
 });
-
 
 module.exports = appRouter;
 

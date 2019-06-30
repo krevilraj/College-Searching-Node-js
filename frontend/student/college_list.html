@@ -22,7 +22,7 @@
 
 <div class="probootstrap-search" id="probootstrap-search">
     <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
-    <form action="#">
+    <form action="./college_list.html">
         <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
     </form>
 </div>
@@ -151,7 +151,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" title="uiCookies:Enlight">Enlight</a>
+                <a class="navbar-brand" href="index.html" title="College Directory"><img src="img/logo.png" alt=""></a>
             </div>
 
             <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -160,7 +160,7 @@
                     <li><a href="college_list.html">Colleges</a></li>
                     <li class="student"><a href="contact.html">Contact</a></li>
 
-                    <li class="admin"><a href="admin/dashboard.html" class="trigger-btn"
+                    <li class="admin"><a href="../admin/index.html" class="trigger-btn"
                                          data-toggle="modal">Dashboard</a></li>
                     <li class="u_log"><a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a></li>
                     <li class="dropdown user">
@@ -179,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left section-heading probootstrap-animate">
-                    <h1>Our Courses</h1>
+                    <h1>College List</h1>
                 </div>
             </div>
         </div>
@@ -278,20 +278,55 @@
 <script src="js/main.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
+    /* $(document).ready(function () {
+         $.ajax({
+             type: 'GET',
+             url: 'http://localhost:8080/college_list',
+             dataType: "html",
+             success: function (response) {
+                 document.getElementById("homeCollege").innerHTML = response;
+             },
+             error: function () {
+                 document.getElementById("homeCollege").innerHTML = "No data Available";
+             }
+         })
+     });*/
+</script>
+
+<script>
     $(document).ready(function () {
-        $.ajax({
-            type: 'GET',
-            url: 'http://localhost:8080/college_list',
-            dataType: "html",
-            success: function (response) {
-                document.getElementById("homeCollege").innerHTML = response;
-            },
-            error: function () {
-                document.getElementById("homeCollege").innerHTML = "No data Available";
-            }
-        })
+        var url = "http://localhost:8080/college_search/";
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('s')) {
+            var data = {query: searchParams.get('s')};
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: data,
+                dataType: "html",
+                success: function (response) {
+                    document.getElementById("homeCollege").innerHTML = response;
+                },
+                error: function () {
+                    document.getElementById("homeCollege").innerHTML = "No data Available";
+                }
+            })
+        } else {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:8080/college_list',
+                dataType: "html",
+                success: function (response) {
+                    document.getElementById("homeCollege").innerHTML = response;
+                },
+                error: function () {
+                    document.getElementById("homeCollege").innerHTML = "No data Available";
+                }
+            });
+        }
     });
 </script>
+
 
 </body>
 </html>

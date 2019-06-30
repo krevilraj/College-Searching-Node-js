@@ -5,6 +5,6 @@ module.exports = mongoose.model('Colleges', new Schema({
     location: String,
     website: String,
     phone: String,
-    image: String,
+    course: String,
     description: String
 }));

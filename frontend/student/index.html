@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>College Searching System</title>
+    <title>College Directory</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords"
           content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
@@ -26,100 +26,101 @@
 
 <div class="probootstrap-search" id="probootstrap-search">
     <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
-    <form action="#">
+    <form action="./college_list.html">
         <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
     </form>
 </div>
 
 
-<!-- Modal HTML -->
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-login">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Sign In</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="message"></div>
 
-                <form id="login" method="post">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" name="email" placeholder="Email"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="text" class="form-control" name="password" placeholder="Password"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" id="btn_signin" class="btn btn-primary btn-block btn-lg">Sign In</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">Don't have an account? <a href="#myModal2" data-toggle="modal"
-                                                                data-dismiss="modal" aria-label="Close">Create one</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="myModal2" class="modal fade">
-    <div class="modal-dialog modal-login">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Sign Up</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div id="message2"></div>
-                <form id="signup" method="post">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" name="email" placeholder="Email"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" name="username" placeholder="Username"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="text" class="form-control" name="password" placeholder="Password"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="text" class="form-control" name="repassword" placeholder="Confirm Password"
-                                   required="required">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button id="btn_signup" type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <div class="probootstrap-page-wrapper">
     <!-- Fixed navbar -->
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="message"></div>
+
+                    <form id="login" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Email"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="text" class="form-control" name="password" placeholder="Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="btn_signin" class="btn btn-primary btn-block btn-lg">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">Don't have an account? <a href="#myModal2" data-toggle="modal"
+                                                                    data-dismiss="modal" aria-label="Close">Create one</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="message2"></div>
+                    <form id="signup" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Email"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="username" placeholder="Username"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="text" class="form-control" name="password" placeholder="Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="text" class="form-control" name="repassword" placeholder="Confirm Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="btn_signup" type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="probootstrap-header-top">
         <div class="container">
@@ -142,6 +143,7 @@
             </div>
         </div>
     </div>
+
     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
             <div class="navbar-header">
@@ -155,7 +157,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" title="uiCookies:Enlight">Enlight</a>
+                <a class="navbar-brand" href="index.html" title="uiCookies:Enlight"><img src="img/logo.png" alt=""></a>
             </div>
 
             <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -164,7 +166,7 @@
                     <li><a href="college_list.html">Colleges</a></li>
                     <li class="student"><a href="contact.html">Contact</a></li>
 
-                    <li class="admin"><a href="admin/dashboard.html" class="trigger-btn"
+                    <li class="admin"><a href="../admin/index.html" class="trigger-btn"
                                          data-toggle="modal">Dashboard</a></li>
                     <li class="u_log"><a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a></li>
                     <li class="dropdown user">

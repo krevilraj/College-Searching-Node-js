@@ -1,0 +1,15 @@
+{{#each datas }}
+    <div class="comment-wrap">
+        <div class="photo">
+            <div class="avatar"
+                 style="background-image: url('img/avatar.png')"></div>
+        </div>
+        <div class="comment-block">
+            <p class="comment-text">{{this.comment}}</p>
+            <div class="bottom-comment">
+                <span
+                        class="enrolled-count">{{this.username}}</span>
+            </div>
+        </div>
+    </div>
+{{/each}}
