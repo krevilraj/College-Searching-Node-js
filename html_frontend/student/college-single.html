@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College Directory</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords"
+          content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        input, textarea {
+            outline: none;
+            border: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+            font-size: 15px;
+            color: #555f77;
+        }
+
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+            color: #ced2db;
+        }
+
+        input::-moz-placeholder, textarea::-moz-placeholder {
+            color: #ced2db;
+        }
+
+        input:-moz-placeholder, textarea:-moz-placeholder {
+            color: #ced2db;
+        }
+
+        input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+            color: #ced2db;
+        }
+
+        .comments p {
+            /* line-height: 1.3125rem;*/
+        }
+
+        .comments {
+            margin: 2.5rem auto 0;
+            max-width: 60.75rem;
+            padding: 0 1.25rem;
+        }
+
+        .comment-wrap {
+            margin-bottom: 1.25rem;
+            display: table;
+            width: 100%;
+            min-height: 5.3125rem;
+        }
+
+        .photo {
+            padding-top: 0.625rem;
+            display: table-cell;
+            width: 3.5rem;
+        }
+
+        .photo .avatar {
+            height: 2.25rem;
+            width: 2.25rem;
+            border-radius: 50%;
+            background-size: contain;
+        }
+
+        .comment-block {
+            padding: 1rem;
+            background-color: #fff;
+            display: table-cell;
+            vertical-align: top;
+            border-radius: 0.1875rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        .comment-block textarea {
+            width: 100%;
+            resize: none;
+        }
+
+        .comment-block button {
+            float: right;
+        }
+
+        .comment-text {
+            margin-bottom: 1.25rem;
+        }
+
+        .bottom-comment {
+            color: #acb4c2;
+            font-size: 0.875rem;
+        }
+
+        .comment-date {
+            float: right;
+            font-size: 2em;
+        }
+
+        .comment-actions {
+            float: right;
+        }
+
+        .comment-actions li {
+            display: inline;
+            margin: -2px;
+            cursor: pointer;
+        }
+
+        .comment-actions li.complain {
+            padding-right: 0.75rem;
+            border-right: 1px solid #e1e5eb;
+        }
+
+        .comment-actions li.reply {
+            padding-left: 0.75rem;
+            padding-right: 0.125rem;
+        }
+
+        .comment-actions li:hover {
+            color: #0095ff;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+
+<div class="probootstrap-search" id="probootstrap-search">
+    <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+    <form action="./college_list.html">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+    </form>
+</div>
+
+<div class="probootstrap-page-wrapper">
+    <!-- Fixed navbar -->
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="message"></div>
+
+                    <form id="login" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="password" placeholder="Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="btn_signin" class="btn btn-primary btn-block btn-lg">Sign In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">Don't have an account? <a href="#myModal2" data-toggle="modal"
+                                                                    data-dismiss="modal" aria-label="Close">Create
+                    one</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="message2"></div>
+                    <form id="signup" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Email"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="username" placeholder="Username"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="password" placeholder="Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control" name="repassword" placeholder="Confirm Password"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="btn_signup" type="submit" class="btn btn-primary btn-block btn-lg">Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Enroll Now</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="message3"></div>
+                    <form id="enrollForm" method="post">
+                        <input type="hidden" name="college_id" id="college_id">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="name" placeholder="Name"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Email"
+                                       required="required">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="tel" class="form-control" name="phone" placeholder="Phone"
+                                       required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <textarea name="message" id="enroll_message" cols="30" placeholder="Leave your query..."
+                                          rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button id="btn_submit" type="submit" class="btn btn-primary btn-block btn-lg">Enroll Now
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="probootstrap-header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+                    <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+                    <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+                    <span><i class="icon-mail"></i>info@uicookies.com</span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+                    <ul>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                        <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i
+                                class="icon-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="btn-more js-btn-more visible-xs">
+                    <a href="#"><i class="icon-dots-three-vertical "></i></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" title="College Directory"><img src="img/logo.png" alt=""></a>
+            </div>
+
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="college_list.html">Colleges</a></li>
+                    <li class="student"><a href="contact.html">Contact</a></li>
+
+                    <li class="admin"><a href="../admin/index.html" class="trigger-btn"
+                                         data-toggle="modal">Dashboard</a></li>
+                    <li class="u_log"><a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a></li>
+                    <li class="dropdown user">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Setting</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile_edit.html">Edit Profile</a></li>
+                            <li><a id="logout" href="javascript:void(0);">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left section-heading probootstrap-animate">
+                    <h1 id="college_name">...</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="probootstrap-section probootstrap-section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row probootstrap-gutter0">
+                        <div class="col-md-5" id="probootstrap-sidebar">
+                            <div class="probootstrap-sidebar-inner probootstrap-overlap probootstrap-animate"
+                                 style="margin-top: 0;">
+                                <h3>Contact Info</h3>
+                                <p><span class="probootstrap-meta"><i class="icon-map-pin"></i> <span
+                                        id="location">...</span></span></p>
+                                <p class="user"><span class="probootstrap-meta"><i class="icon-global"></i> <span
+                                        id="website">...</span></span></p>
+                                <p class="user"><span class="probootstrap-meta"><i class="icon-phone  "></i> <span
+                                        id="phone">...</span></span></p>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6 col-md-push-1  probootstrap-animate" id="probootstrap-content">
+                            <h2>Description</h2>
+                            <p> Course: <span id="course" class="user" style="font-style: italic"></span></p>
+                            <p id="description" class="user"></p>
+                            <p class="u_log enrolled-count">You are not Authorize user to see description. Login in First to see full
+                                info</p>
+                            <p><a href="#myModal3" data-toggle="modal" role="button" class="btn btn-primary">Enroll with
+                                this course now</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="probootstrap-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+                    <a href="#myModal3" data-toggle="modal" role="button"
+                       class="btn btn-primary btn-lg btn-ghost probootstrap-animate"
+                       data-animate-effect="fadeInLeft">Enroll</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3>Comments</h3>
+    <hr>
+    <div class="comments">
+        <div class="comment-wrap">
+            <div class="photo">
+                <div class="avatar"
+                     style="background-image: url('img/avatar.png')"></div>
+            </div>
+            <div class="comment-block">
+                <div id="comment_message"></div>
+                <form action="" id="commentForm">
+                    <textarea name="" id="comment" cols="30" rows="3" placeholder="Add comment..."></textarea>
+                    <button class="btn btn-primary" id="comment_submit" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="comments" id="all_comment">
+
+    </div>
+
+</div>
+<footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="probootstrap-footer-widget">
+                    <h3>About The School</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a
+                        cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident
+                        dolor ab aliquam eveniet alias</p>
+                    <h3>Social</h3>
+                    <ul class="probootstrap-footer-social">
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-github"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+                <div class="probootstrap-footer-widget">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Teachers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="probootstrap-footer-widget">
+                    <h3>Contact Info</h3>
+                    <ul class="probootstrap-contact-info">
+                        <li><i class="icon-location2"></i>
+                            <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
+                        <li><i class="icon-mail"></i><span>info@domain.com</span></li>
+                        <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- END row -->
+
+    </div>
+
+    <div class="probootstrap-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <p>&copy; 2017 All Rights Reserved.
+                        Designed &amp; Developed with <i class="icon icon-heart"></i> by <a
+                                href="#">Manish Chaudhary</a></p>
+                </div>
+                <div class="col-md-4 probootstrap-back-to-top">
+                    <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<!-- END wrapper -->
+
+
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function () {
+        var url = "http://localhost:8080/collegeDetail/";
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('id')) {
+            url = url + searchParams.get('id');
+        }
+
+        $.ajax({
+            type: 'GET',
+            url: url,
+            dataType: "json",
+            success: function (response) {
+                console.log(response);
+                $('#college_id').val(response._id);
+                $('#college_name').html(response.college_name);
+                $('#location').html(response.location);
+                $('#website').html(response.website);
+                $('#phone').html(response.phone);
+                $('#course').html(response.course);
+                $('#description').html(response.description);
+                getComment();
+            },
+            error: function () {
+            }
+        })
+
+
+    });
+
+    /* ------------For redirecting---------- */
+    var token = localStorage.getItem("access_token");
+    var id = localStorage.getItem("id");
+    $('<a href="collegeList.html" id="redirect"></a>').appendTo("body");
+    $('<input type="hidden" name="token" value="' + token + '">').appendTo("#form");
+    $('<input type="hidden" name="id" value="' + id + '">').appendTo("#form");
+
+    $("#enrollForm").submit(function (event) {
+        event.preventDefault();
+        var u_form = $(this);
+
+        var url = 'http://localhost:8080/addCollegeEnroll';
+
+        var data = u_form.serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            dataType: "json",
+            beforeSend: function () {
+                $("#btn_submit").html("Please Wait...");
+            },
+            success: function (response) {
+
+                if (response.response) {
+                    u_form[0].reset();
+                    document.getElementById("message3").innerHTML = "<div class=\"alert alert-success\" role=\"alert\">\n" +
+                        "Success!!! We will call you soon" +
+                        "</div>";
+                }
+                else {
+                    document.getElementById("message3").innerHTML = "<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                        response.message +
+                        "</div>";
+                }
+            },
+            complete: function () {
+                $("#btn_submit").html("Enroll Now");
+            },
+            error: function () {
+            }
+        })
+    });
+
+    $("#commentForm").submit(function (event) {
+        event.preventDefault();
+        var searchParams = new URLSearchParams(window.location.search);
+        var college_id = "";
+        if (searchParams.has('id')) {
+            college_id = searchParams.get('id');
+        }
+        var _form = $(this);
+        var msg = $('#comment').val();
+
+        var data = {
+            username: localStorage.getItem("username"),
+            comment: msg,
+            user_id: localStorage.getItem("id"),
+            college_id: college_id,
+            token: localStorage.getItem("access_token")
+        };
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8080/student/send_comment',
+            data: data,
+            dataType: "json",
+            beforeSend: function () {
+                $(".comment_submit").attr("disabled", true).html("Please Wait...");
+            },
+            success: function (response) {
+                if (response.response) {
+                    $('#comment').val("");
+                    getComment();
+                    document.getElementById("comment_message").innerHTML = "<div class=\"alert alert-success\" role=\"alert\">\n" +
+                        response.message +
+                        "</div>";
+                } else {
+                    document.getElementById("comment_message").innerHTML = "<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                        response.message +
+                        "</div>";
+                }
+            },
+            complete: function () {
+                $(".comment_submit").attr("disabled", false).html("Submit");
+            },
+            error: function () {
+                alert('Login in first');
+            }
+        })
+    });
+
+    function getComment() {
+        var urlc = "http://localhost:8080/commentCollege/";
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('id')) {
+            urlc = urlc + searchParams.get('id');
+        }
+        $.ajax({
+            type: 'GET',
+            url: urlc,
+            dataType: "html",
+            success: function (response) {
+                document.getElementById("all_comment").innerHTML = response;
+            },
+            error: function () {
+                document.getElementById("all_comment").innerHTML = "No data Available";
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
